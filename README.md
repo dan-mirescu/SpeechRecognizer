@@ -1,6 +1,7 @@
-Speech recognition functional demo application for Windows designed for usage inside VR virtual desktop.
+**Speech recognition functional demo application for Windows designed for usage inside VR virtual desktop.**
 
 **Note**: the application can also be used outside VR virtual desktop, however it is built with VR in mind.
+
 ![SpeechRecognizer usage demo](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_usage_example.gif)
 
 # Why?
@@ -21,6 +22,7 @@ Before opening the application, you need to configure the Google Speech-To-Text 
 
 After you have saved your service credentials you can open the application.
 When the application opens, a red “microphone” button is displayed on top of all the windows.
+
 ![SpeechRecognizer button](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_button.png)
 Right click the button for settings:
 ![SpeechRecognizer settings](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_settings.png)
