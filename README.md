@@ -15,6 +15,8 @@ While speech recognition already exists in Windows, it did not exist for my nati
 The speech recognition service is offered by Google and it is not 100% free. You need to configure the Speech-to-Text service in Google Cloud with a Google account and use the credentials generated from there with this application. Generally, Google offers a certain amount of free minutes of service per month and low prices per minute after the free minutes elapse. See the pricing details here: https://cloud.google.com/speech-to-text/pricing
 
 # How to use the application?
+Requirements: Google account and Google cloud project with billing enabled
+
 Before opening the application, you need to configure the Google Speech-To-Text service. This will be a one-time operation as your service credentials will be saved in the application’s folder.
 
 - Go to https://cloud.google.com/speech-to-text/docs/before-you-begin and follow the steps until “Set your authentication environment variable”. At this point you should have a JSON file containing the necessary service credentials.
@@ -43,3 +45,14 @@ The usual flow:
 3.	Wait until the message “Speak now” is displayed
 4.	Speak
 5.	When the application detects that you stopped, it will show you the recognized text and auto-fill it in the select text input area. Auto-fill happens if “Auto send keys” is checked in the settings.
+
+# How to build the application
+Requirements: Visual Studio, Google account and Google cloud project with billing enabled
+
+1. Clone the repository on your local machine
+2. Obtain Google application credentials for the Speech-to-Text service. Please refer to [the beginning of "How to use the application" section](#how-to-use-the-application) for details on how to obtain the credentials.
+3. Save the credentials inside the SpeechRecognizer Visual Studio project folder (the folder containing the SpeechRecognizer.csproj file) in a file named `google-application-credentials.json`
+4. Open SpeechRecognizer.sln in Visual Studio
+5. Set SpeechRecognizer as startup project
+6. Build the solution. NuGet packages should be restored as part of this operation
+7. Now the application is ready to run.
