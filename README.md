@@ -24,8 +24,11 @@ After you have saved your service credentials you can open the application.
 When the application opens, a red “microphone” button is displayed on top of all the windows.
 
 ![SpeechRecognizer button](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_button.png)
+
 Right click the button for settings:
+
 ![SpeechRecognizer settings](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_settings.png)
+
 - **ro-RO, en-US**: the language to be used for the speech recognition. Note: the application is in a functional demo stage and these are the available languages. New languages can be easily added on request or by pulling the code yourself and adding them. 
 - **Auto send keys**: whether the recognized text to be auto-typed from the keyboard when the speech recognition ends
 - **Auto copy to clipb**: whether the recognized text should be auto-placed in the clipboard when the speech recognition ends
