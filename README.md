@@ -1,6 +1,7 @@
 **Speech recognition functional demo application for Windows designed for usage inside VR virtual desktop.**
 
 **Note**: the application can also be used outside VR virtual desktop, however it is built with VR in mind.
+**Note 2: Please be careful with sharing this application. If you include your Google application credentials, the people who gain access to your share can incur charges on your Google account!**
 
 ![SpeechRecognizer usage demo](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_usage_example.gif)
 
