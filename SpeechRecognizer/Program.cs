@@ -19,21 +19,26 @@ namespace SpeechRecognizer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Form form;
+            var userProfileDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            var settingsDirectory = Path.Combine(userProfileDirectory, ".dmm-software\\SpeechRecognizer");
+            var googleAppCredentialsFile = Path.Combine(settingsDirectory, "google-application-credentials.json");
 
-            var directory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            var googleAppCredentialsFile = Path.Combine(directory, "google-application-credentials.json");
+            //var directory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            //var googleAppCredentialsFile = Path.Combine(directory, "google-application-credentials.json");
             if (!File.Exists(googleAppCredentialsFile))
             {
-                form = new GoogleAppCredentialsForm();
+                var form = new GoogleAppCredentialsForm(settingsDirectory, googleAppCredentialsFile);
+                if(form.ShowDialog() == DialogResult.OK)
+                {
+                    Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", googleAppCredentialsFile);
+                    Application.Run(new MainForm());
+                }
             }
             else
             {
                 Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", googleAppCredentialsFile);
-                form = new MainForm();
+                Application.Run(new MainForm());
             }
-
-            Application.Run(form);
         }
     }
 }
