@@ -2,7 +2,7 @@
 
 **Note**: the application can also be used outside VR virtual desktop, however it is built with VR in mind.
 
-**IMPORTANT NOTE: Please be careful with sharing this application. If you include your Google application credentials, the people who gain access to your share can incur charges on your Google account!**
+**IMPORTANT NOTE: If you share this application and you want to include your Google application credentials which are found in your user profile folder, the people who gain access to your share can incur charges on your Google account!**
 
 ![SpeechRecognizer usage demo](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_usage_example.gif)
 
@@ -19,12 +19,12 @@ The speech recognition service is offered by Google and it is not 100% free. You
 # How to use the application?
 Requirements: Google account and Google cloud project with billing enabled
 
-Before opening the application, you need to configure the Google Speech-To-Text service. This will be a one-time operation as your service credentials will be saved in the application’s folder.
+Before opening the application, you need to configure the Google Speech-To-Text service. This will be a one-time operation as your service credentials will be saved in your user profile folder.
 
 - Go to https://cloud.google.com/speech-to-text/docs/before-you-begin and follow the steps until “Set your authentication environment variable”. At this point you should have a JSON file containing the necessary service credentials.
-- Place the JSON file in the SpeechRecognizer application folder, with the `google-application-credentials.json` filename.
+- Open the application and browse to the JSON file or drag and drop it on top of the window. Then, click on "Use provided file".
 
-After you have saved your service credentials you can open the application.
+After you have set up your service credentials you can open the application.
 When the application opens, a red “microphone” button is displayed on top of all the windows.
 
 ![SpeechRecognizer button](https://raw.githubusercontent.com/dan-mirescu/Static/main/SpeechRecognizer/SpeechRecognizer_button.png)
@@ -52,9 +52,8 @@ The usual flow:
 Requirements: Visual Studio, Google account and Google cloud project with billing enabled
 
 1. Clone the repository on your local machine
-2. Obtain Google application credentials for the Speech-to-Text service. Please refer to [the beginning of "How to use the application" section](#how-to-use-the-application) for details on how to obtain the credentials.
-3. Save the credentials inside the SpeechRecognizer Visual Studio project folder (the folder containing the SpeechRecognizer.csproj file) in a file named `google-application-credentials.json`
-4. Open SpeechRecognizer.sln in Visual Studio
-5. Set SpeechRecognizer as startup project
-6. Build the solution. NuGet packages should be restored as part of this operation
-7. Now the application is ready to run.
+2. Open SpeechRecognizer.sln in Visual Studio
+3. Set SpeechRecognizer as startup project
+4. Build the solution. NuGet packages should be restored as part of this operation
+5. Obtain Google application credentials for the Speech-to-Text service. Please refer to [the beginning of "How to use the application" section](#how-to-use-the-application) for details on how to obtain the credentials.
+6. Run the application.
