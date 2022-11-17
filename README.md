@@ -53,7 +53,15 @@ Requirements: Visual Studio, Google account and Google cloud project with billin
 
 1. Clone the repository on your local machine
 2. Open SpeechRecognizer.sln in Visual Studio
-3. Set SpeechRecognizer as startup project
-4. Build the solution. NuGet packages should be restored as part of this operation
-5. Obtain Google application credentials for the Speech-to-Text service. Please refer to [the beginning of "How to use the application" section](#how-to-use-the-application) for details on how to obtain the credentials.
-6. Run the application.
+3. Build the solution. NuGet packages should be restored as part of this operation
+4. Obtain Google application credentials for the Speech-to-Text service. Please refer to [the beginning of "How to use the application" section](#how-to-use-the-application) for details on how to obtain the credentials.
+5. Run the application.
+
+Note: I sometimes had an issue with a missing grpc_csharp_ext.x86.dll when testing a build from scratch. It seems that the Grpc.Core package sometimes does not copy the native library to the application build folder. This happened when the application got stuck in "wait..." mode.
+To check if this is the case:
+1. Start debugging the application in Visual Studio
+2. Inside Exception Settings in Visual Studio, put a checkmark near "Common Language Runtime Exceptions"
+3. Start voice recognition
+4. If there is an issue with the missing dll, an exception is thrown at this moment.
+
+Possible solutions: Reference the dll explicitly from the SpeechRecognizer project or add the dll to the project and set it to be copied to the build folder.
