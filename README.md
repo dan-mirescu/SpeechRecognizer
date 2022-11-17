@@ -19,6 +19,8 @@ The speech recognition service is offered by Google and it is not 100% free. You
 # How to use the application?
 Requirements: Google account and Google cloud project with billing enabled
 
+Download the application from the Releases section on Github.
+
 Before opening the application, you need to configure the Google Speech-To-Text service. This will be a one-time operation as your service credentials will be saved in your user profile folder.
 
 - Go to https://cloud.google.com/speech-to-text/docs/before-you-begin and follow the steps until “Set your authentication environment variable”. At this point you should have a JSON file containing the necessary service credentials.
