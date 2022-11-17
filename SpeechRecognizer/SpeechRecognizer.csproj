@@ -206,9 +206,6 @@
     <EmbeddedResource Include="TextPreviewForm.resx">
       <DependentUpon>TextPreviewForm.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="google-application-credentials.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
