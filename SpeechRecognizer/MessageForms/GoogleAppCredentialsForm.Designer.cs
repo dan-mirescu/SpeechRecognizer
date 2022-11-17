@@ -45,7 +45,7 @@ namespace SpeechRecognizer.MessageForms
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(425, 117);
+            this.label1.Size = new System.Drawing.Size(425, 130);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -62,7 +62,7 @@ namespace SpeechRecognizer.MessageForms
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(253, 205);
+            this.btnCancel.Location = new System.Drawing.Point(250, 217);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace SpeechRecognizer.MessageForms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 147);
+            this.label2.Location = new System.Drawing.Point(13, 159);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(165, 13);
             this.label2.TabIndex = 3;
@@ -81,14 +81,14 @@ namespace SpeechRecognizer.MessageForms
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(19, 165);
+            this.textBox1.Location = new System.Drawing.Point(16, 177);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(339, 20);
             this.textBox1.TabIndex = 4;
             // 
             // btnBrowse
             // 
-            this.btnBrowse.Location = new System.Drawing.Point(364, 164);
+            this.btnBrowse.Location = new System.Drawing.Point(361, 176);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(75, 23);
             this.btnBrowse.TabIndex = 5;
@@ -98,7 +98,7 @@ namespace SpeechRecognizer.MessageForms
             // 
             // btnUseProvidedFile
             // 
-            this.btnUseProvidedFile.Location = new System.Drawing.Point(103, 205);
+            this.btnUseProvidedFile.Location = new System.Drawing.Point(100, 217);
             this.btnUseProvidedFile.Name = "btnUseProvidedFile";
             this.btnUseProvidedFile.Size = new System.Drawing.Size(123, 23);
             this.btnUseProvidedFile.TabIndex = 6;
@@ -115,7 +115,7 @@ namespace SpeechRecognizer.MessageForms
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 248);
+            this.ClientSize = new System.Drawing.Size(451, 254);
             this.Controls.Add(this.btnUseProvidedFile);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.textBox1);
